@@ -1,0 +1,50 @@
+.container
+{
+    margin-top: 200px;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, grey, black);
+    background-position: center;
+}
+input
+{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border: none;
+}
+button
+{
+    margin-left: 150px;
+    width: 15%;
+    height: 50px;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, black,green, black);
+    color: black;
+    border-radius: 30px;
+    border: none;
+    
+}
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    height: 60px;
+    color: black;
+    
+}
+p
+{
+    color: black;
+}
+img
+{
+    height: 60px;
+    width: 80px;
+    margin-left: 130px;
+}

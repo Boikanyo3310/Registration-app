@@ -1,0 +1,52 @@
+<div class="container">
+
+<div class="form">
+
+<h1>
+  Registration Form
+</h1>
+
+
+<p style="margin-left: 20px;">
+  Please fill complete the form below then, press the "add" button.
+</p>
+
+  <input placeholder="Enter name" [(ngModel)]="name" style="margin-bottom: 40px;">
+  <input placeholder="Enter surname" [(ngModel)]="surname" style="margin-bottom: 40px;">
+  <input placeholder="Enter id" [(ngModel)]="id" >
+  <p style="color: red;">
+    {{idValidation}}
+  </p>
+  <input placeholder="Enter email" [(ngModel)]="email">
+  <p style="color: red;">
+  {{emailValidation}}
+</p>
+  <input placeholder="Enter contact" [(ngModel)]="contact">
+  <p style="color: red;">
+  {{contactValidation}}
+</p>
+
+  <button (click)="addUser()">
+    Add
+  </button>
+ 
+  <br>
+  
+</div>
+
+
+<div *ngFor="let user of users ; let i = index">
+  <p>{{user.name}}</p>
+  <p>{{user.surname}}</p>
+  <p>{{user.id}}</p>
+  <p>{{user.email}}</p>
+  <p>{{user.contact}}</p>
+
+  <button (click)="deleteUser(i)" style="background-image: linear-gradient(to right, black, red, black);">
+    Delete
+  </button>
+
+  <button (click)="updateUser(i)" style="background-image: linear-gradient(to right, black, orange, black);">
+    Update
+  </button>
+</div>
